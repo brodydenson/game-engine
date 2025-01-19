@@ -1,3 +1,0 @@
-/Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/GameEngine.dir
-/Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/edit_cache.dir
-/Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/rebuild_cache.dir
