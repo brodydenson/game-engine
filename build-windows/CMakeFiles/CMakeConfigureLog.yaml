@@ -1,0 +1,525 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Windows -  - 
+      The host system is: Darwin - 22.5.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/homebrew/bin/x86_64-w64-mingw32-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        /Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/3.26.4/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/homebrew/bin/x86_64-w64-mingw32-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        /Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/3.26.4/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/CMakeScratch/TryCompile-xTVUoU"
+      binary: "/Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/CMakeScratch/TryCompile-xTVUoU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/CMakeScratch/TryCompile-xTVUoU
+        
+        Run Build Command(s):/opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a56ff/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a56ff.dir/build.make CMakeFiles/cmTC_a56ff.dir/build
+        Building C object CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj
+        /opt/homebrew/bin/x86_64-w64-mingw32-gcc   -v -o CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/x86_64-w64-mingw32-gcc
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --prefix=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a56ff.dir/'
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/cc1 -quiet -v -D_REENTRANT /opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a56ff.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//cc1kF6p8.s
+        GNU C17 (GCC) version 14.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.1.0.2.5), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/usr/local/include"
+        ignoring duplicate directory "/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: f2da2cb881edb06631d05238310f3703
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a56ff.dir/'
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as -v -o CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj /var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//cc1kF6p8.s
+        GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_a56ff.exe
+        /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a56ff.dir/link.txt --verbose=1
+        /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E rm -f CMakeFiles/cmTC_a56ff.dir/objects.a
+        /opt/homebrew/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_a56ff.dir/objects.a @CMakeFiles/cmTC_a56ff.dir/objects1.rsp
+        /opt/homebrew/bin/x86_64-w64-mingw32-gcc  -v -Wl,--whole-archive CMakeFiles/cmTC_a56ff.dir/objects.a -Wl,--no-whole-archive -o cmTC_a56ff.exe -Wl,--out-implib,libcmTC_a56ff.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/x86_64-w64-mingw32-gcc
+        COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --prefix=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a56ff.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a56ff.'
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/collect2 -plugin /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.so -plugin-opt=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//ccb0zv0M.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_a56ff.exe /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0 -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib --whole-archive CMakeFiles/cmTC_a56ff.dir/objects.a --no-whole-archive --out-implib libcmTC_a56ff.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a56ff.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a56ff.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include]
+          add: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
+          add: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include]
+        collapse include dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
+        collapse include dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include]
+        implicit include dirs: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-w64-mingw32-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/CMakeScratch/TryCompile-xTVUoU]
+        ignore line: []
+        ignore line: [Run Build Command(s):/opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a56ff/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a56ff.dir/build.make CMakeFiles/cmTC_a56ff.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/opt/homebrew/bin/x86_64-w64-mingw32-gcc   -v -o CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/x86_64-w64-mingw32-gcc]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --prefix=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a56ff.dir/']
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/cc1 -quiet -v -D_REENTRANT /opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a56ff.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//cc1kF6p8.s]
+        ignore line: [GNU C17 (GCC) version 14.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.1.0.2.5)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include]
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: f2da2cb881edb06631d05238310f3703]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a56ff.dir/']
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as -v -o CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj /var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//cc1kF6p8.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a56ff.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_a56ff.exe]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a56ff.dir/link.txt --verbose=1]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E rm -f CMakeFiles/cmTC_a56ff.dir/objects.a]
+        ignore line: [/opt/homebrew/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_a56ff.dir/objects.a @CMakeFiles/cmTC_a56ff.dir/objects1.rsp]
+        ignore line: [/opt/homebrew/bin/x86_64-w64-mingw32-gcc  -v -Wl --whole-archive CMakeFiles/cmTC_a56ff.dir/objects.a -Wl --no-whole-archive -o cmTC_a56ff.exe -Wl --out-implib libcmTC_a56ff.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/x86_64-w64-mingw32-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --prefix=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a56ff.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a56ff.']
+        link line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/collect2 -plugin /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.so -plugin-opt=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//ccb0zv0M.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_a56ff.exe /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0 -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib --whole-archive CMakeFiles/cmTC_a56ff.dir/objects.a --no-whole-archive --out-implib libcmTC_a56ff.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//ccb0zv0M.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_a56ff.exe] ==> ignore
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o] ==> obj [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_a56ff.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_a56ff.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o] ==> obj [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse obj [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib/crt2.o]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib]
+        implicit libs: [mingw32;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;mingwex;kernel32]
+        implicit objs: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib/crt2.o;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
+        implicit dirs: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/CMakeScratch/TryCompile-YEs7GC"
+      binary: "/Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/CMakeScratch/TryCompile-YEs7GC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/CMakeScratch/TryCompile-YEs7GC
+        
+        Run Build Command(s):/opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_96bc5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_96bc5.dir/build.make CMakeFiles/cmTC_96bc5.dir/build
+        Building CXX object CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj
+        /opt/homebrew/bin/x86_64-w64-mingw32-g++   -v -o CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/x86_64-w64-mingw32-g++
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --prefix=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_96bc5.dir/'
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/cc1plus -quiet -v -D_REENTRANT /opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_96bc5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//ccmeTKdz.s
+        GNU C++17 (GCC) version 14.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.1.0.2.5), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/usr/local/include"
+        ignoring duplicate directory "/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0/x86_64-w64-mingw32
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0/backward
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 51a76cc8d6cb1787b72efc04f5000c04
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_96bc5.dir/'
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as -v -o CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//ccmeTKdz.s
+        GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_96bc5.exe
+        /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96bc5.dir/link.txt --verbose=1
+        /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E rm -f CMakeFiles/cmTC_96bc5.dir/objects.a
+        /opt/homebrew/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_96bc5.dir/objects.a @CMakeFiles/cmTC_96bc5.dir/objects1.rsp
+        /opt/homebrew/bin/x86_64-w64-mingw32-g++  -v -Wl,--whole-archive CMakeFiles/cmTC_96bc5.dir/objects.a -Wl,--no-whole-archive -o cmTC_96bc5.exe -Wl,--out-implib,libcmTC_96bc5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/x86_64-w64-mingw32-g++
+        COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --prefix=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96bc5.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_96bc5.'
+         /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/collect2 -plugin /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.so -plugin-opt=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//cc3hN0mb.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_96bc5.exe /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0 -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib --whole-archive CMakeFiles/cmTC_96bc5.dir/objects.a --no-whole-archive --out-implib libcmTC_96bc5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96bc5.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_96bc5.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0]
+          add: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0/x86_64-w64-mingw32]
+          add: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0/backward]
+          add: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include]
+          add: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
+          add: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include/c++/14.1.0]
+        collapse include dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0/x86_64-w64-mingw32] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include/c++/14.1.0/x86_64-w64-mingw32]
+        collapse include dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0/backward] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include/c++/14.1.0/backward]
+        collapse include dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include]
+        collapse include dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
+        collapse include dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include]
+        implicit include dirs: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include/c++/14.1.0;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include/c++/14.1.0/x86_64-w64-mingw32;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include/c++/14.1.0/backward;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-w64-mingw32-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /Users/chipwy/Dev/GameEngine/build-windows/CMakeFiles/CMakeScratch/TryCompile-YEs7GC]
+        ignore line: []
+        ignore line: [Run Build Command(s):/opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_96bc5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_96bc5.dir/build.make CMakeFiles/cmTC_96bc5.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/opt/homebrew/bin/x86_64-w64-mingw32-g++   -v -o CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/x86_64-w64-mingw32-g++]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --prefix=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_96bc5.dir/']
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/cc1plus -quiet -v -D_REENTRANT /opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_96bc5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//ccmeTKdz.s]
+        ignore line: [GNU C++17 (GCC) version 14.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.1.0.2.5)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0]
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0/x86_64-w64-mingw32]
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include/c++/14.1.0/backward]
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include]
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 51a76cc8d6cb1787b72efc04f5000c04]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_96bc5.dir/']
+        ignore line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as -v -o CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//ccmeTKdz.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_96bc5.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_96bc5.exe]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96bc5.dir/link.txt --verbose=1]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E rm -f CMakeFiles/cmTC_96bc5.dir/objects.a]
+        ignore line: [/opt/homebrew/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_96bc5.dir/objects.a @CMakeFiles/cmTC_96bc5.dir/objects1.rsp]
+        ignore line: [/opt/homebrew/bin/x86_64-w64-mingw32-g++  -v -Wl --whole-archive CMakeFiles/cmTC_96bc5.dir/objects.a -Wl --no-whole-archive -o cmTC_96bc5.exe -Wl --out-implib libcmTC_96bc5.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/x86_64-w64-mingw32-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --prefix=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/:/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96bc5.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_96bc5.']
+        link line: [ /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/collect2 -plugin /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.so -plugin-opt=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//cc3hN0mb.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_96bc5.exe /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0 -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib --whole-archive CMakeFiles/cmTC_96bc5.dir/objects.a --no-whole-archive --out-implib libcmTC_96bc5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/hb/w6w0dnwx65g2thq2810ftwpm0000gn/T//cc3hN0mb.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_96bc5.exe] ==> ignore
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o] ==> obj [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-L/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib] ==> dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_96bc5.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_96bc5.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o] ==> obj [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib/crt2.o]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib/../lib] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib]
+        collapse library dir [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib] ==> [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32]
+        implicit objs: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib/crt2.o;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
+        implicit dirs: [/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/14.1.0;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/x86_64-w64-mingw32/lib;/opt/homebrew/Cellar/mingw-w64/11.0.1_1/toolchain-x86_64/mingw/lib]
+        implicit fwks: []
+      
+      
+...

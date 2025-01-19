@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -std=c++17 -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/GameEngine.dir/main.cpp.o CMakeFiles/GameEngine.dir/glad.c.o -o GameEngine  -Wl,-rpath,/opt/homebrew/lib /opt/homebrew/lib/libglfw.3.3.dylib 
